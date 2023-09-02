@@ -1,2 +1,2 @@
-# Project1
-This for Mudule 7 Project
+# Project 1
+This is for our Module 7 Project
