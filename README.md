@@ -1,2 +1,3 @@
-# Project1
-This for Mudule 7 Project
+# Project : Low-Carbon Electricity and Global Average Temperatures
+This is for our Module 7 Project
+
