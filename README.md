@@ -29,14 +29,14 @@ Additionally, the analysis will examine the emissions of CO2 and their impact on
 ## Data Collection : 
 
 ###  - Collect data on low-carbon electricity percentage usage for each of the 101 countries. This data may include the percentage of electricity generated from low carbon  sources like wind, solar, hydro, and nuclear power.
-###    - Gather data on global average temperatures over a specific time period (year 2019) for these countries.
+###  - Gather data on global average temperatures over a specific time period (year 2019) for these countries.
 ###  - Collect data on emissions related to the use of energy ,  CO2 emissions .
 ###  - Collect the Longitude and latitude value of differents countries to make a good map 
 ## Datasets  used: 
 
-‘https://www.weatherstack.com, ‘
+‘https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset,’
 ‘https://www.kaggle.com/datasets/anshtanwar/global-data-on-sustainable-energy,’
-‘https://www.kaggle.com/datasets/nelgiriyewithana/countries-of-the-world-2023,’
+‘https://www.kaggle.com/datasets/balabaskar/historical-weather-data-of-all-country-capitals’
 
 
 ## Data processing
