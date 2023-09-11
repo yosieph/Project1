@@ -293,13 +293,14 @@ Additionally, the higher usage of low-carbon electricity in colder, more develop
 #  Conclusion
 
 ### This data analysis sheds light on the complex interplay between temperature, energy consumption, low-carbon electricity usage and Co2 emission. 
-Understanding these dynamics is crucial for addressing climate change, optimizing energy resources, and making informed decisions regarding energy policy and sustainability initiatives. 
+Understanding these dynamics is crucial for addressing climate change, optimizing energy resources, and making informed decisions regarding energy policy and sustainability initiatives.
 Further research and investigation into specific regions and policy interventions may be necessary to develop targeted strategies for reducing carbon emissions and promoting clean energy adoption.
 
 
-#  Recommendations 
-our recommendations or insights for future research in this area are :
-1 -Exploration of Other Factors:
-- Further analysis considered additional factors like population and economic indicators, energy consumption over the years, revealing potential relationships between these variables and energy consumption.
+#  Recommendations
+
+Our recommendations or insights for future research in this area are:
+
+Exploration of Other Factors:
+Further analysis considered additional factors like population and economic indicators, energy consumption over the years, revealing potential relationships between these variables and energy consumption.
 Those relationships may offer insights into energy demand patterns and the adoption of low-carbon energy sources and gives more valuable information  for policymakers and energy planners as they prepare for future energy needs.
--
