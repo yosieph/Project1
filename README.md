@@ -18,11 +18,10 @@ Additionally, the analysis will examine the emissions of CO2 and their impact on
 ###  1 - Do higher and lower temperatures have an impact on energy consumption? Danik
 
 ###  2 - What is the percentage of low-carbon electricity used in the highest & lowest countries ? Khadija
-       #### “do this for the  highest & lowest  countries 
-       #### “do this for  10 top &bottom highest & lowest  countries 
        
-    1- ###  3- Do countries with high CO2 emissions use less low-carbon electricity? Yosieph
-             ####  Do countries with low CO2 emissions use more low-carbon electricity? 
+###  3- Do countries with high CO2 emissions use less low-carbon electricity? Yosieph
+
+###  4- Do countries with low CO2 emissions use more low-carbon electricity? 
 
 # Data analysis process 
 
