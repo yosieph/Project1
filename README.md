@@ -10,8 +10,7 @@ policymakers, governments, researchers, and the general public.
 This data analysis help to explore this relationship and highlight its significance.
 
 # Project Objective 
-The primary objective of this data analysis is to investigate if there is a correlation between first Temperature & energy consumption ,second the use of low-carbon electricity sources and global average temperatures across 101 different countries. 
-Additionally, the analysis will examine the emissions of CO2 and their impact on temperatures.
+The primary objective of this data analysis is to investigate if there is a correlation between first temperature & energy consumption, second, the use of low-carbon electricity sources and global average temperatures across 101 different countries. Additionally, the analysis will examine the emissions of CO2 and their impact on temperatures.
 
 #  Research Questions: 
 
@@ -31,21 +30,22 @@ Additionally, the analysis will examine the emissions of CO2 and their impact on
 ###  - Collect data on low-carbon electricity percentage usage for each of the 101 countries. This data may include the percentage of electricity generated from low carbon  sources like wind, solar, hydro, and nuclear power.
 ###  - Gather data on global average temperatures over a specific time period (year 2019) for these countries.
 ###  - Collect data on emissions related to the use of energy ,  CO2 emissions .
-###  - Collect the Longitude and latitude value of differents countries to make a good map 
+###  - Collect the Longitude and latitude value of differents countries to make a good map
+
 ## Datasets  used: 
 
-‘https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset,’
-‘https://www.kaggle.com/datasets/anshtanwar/global-data-on-sustainable-energy,’
-‘https://www.kaggle.com/datasets/balabaskar/historical-weather-data-of-all-country-capitals’
-
+-‘https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset,’
+-‘https://www.kaggle.com/datasets/anshtanwar/global-data-on-sustainable-energy,’
+-‘https://www.kaggle.com/datasets/balabaskar/historical-weather-data-of-all-country-capitals’
 
 ## Data processing
 
-Our CSV file named "project_data.csv" is obtained from merging three datasets , and claining them and take the data values which we want to use ,
-this final dataset  contain data related to various countries and their energy-related statistics &temperature average 
-all data included are in the same period “year on 2019 “. 
-the first column contain 101 countries  sorted by alphabet .
-The all columns in our dataset are:
+Our CSV file named "project_data.csv" is obtained from merging three datasets, and cleaning them and keeping the data values which we want to use.
+This final dataset contains data related to various countries and their energy-related statistics & temperature averages.
+
+All data included are in the same period "2019", with the exception of country population "2020".
+the first column contain 101 countries sorted by alphabet.
+The columns in our dataset are:
 
 ```
 1. Country
@@ -59,7 +59,7 @@ The all columns in our dataset are:
 9. CO2 Emissions (Metric Tons per Capita)
 10. Latitude
 11. Longitude
-12. Population 
+12. 2020 Population 
 ```
 ## Data Visualizations:**
 - A variety of visualizations, including scatter plots, box plots, linear regression and map plots, were used to explore different aspects of the data. These visualizations enhanced our understanding of the data and provided insights into distribution, correlation, and geographic patterns.
