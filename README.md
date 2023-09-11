@@ -150,7 +150,7 @@ However, for countries with an average temperature of 10 or lower, there is a mo
 
 
 
-### Use of low-carbon electricity sources and average temperatures developed by Khadija
+## Use of low-carbon electricity sources and average temperatures developed by Khadija
 
 #### Map plot of Average Temperature
 
@@ -158,10 +158,21 @@ However, for countries with an average temperature of 10 or lower, there is a mo
 
 #### Map plot of Low-carbon electricity (% electricity)
 
+##### 1 Visualization
+```
+#Perform a code to visualize the scatter plot and linear regression about  relation between average temperature and  Renewable energy share in the total final energy consumption (%)
+
+output_data/Scatter-Plot-with-linear-regression-for-Lowest-Temperature-Countries.png
+output_data/Scatter-Plot-with-linear-regression-for-highest-Temperature-Countries.png
+output_data/Combined-Scatter-Plot-with-linear-regression-for-All-Countries.png
+```
+##### Analysis
+##### we have a negative coefficient -9.25 so the coldest countries tend to rely more heavily on renewables energy pourcentage  or the highest countries with a strong correlation coefficient 15,58 tend to use more renewable energy source .the percentage of renewable energy used have a positif regression with the average temperature on global countries 
+
 
 ####  Interpretation and Analysis 
 ```
-#The low carbon electricity percentage in the highest & lowest  temperature countries
+#Perform code to show The low carbon electricity percentage in the highest & lowest  temperature countries
 ```
 ##### Result 
 ```
