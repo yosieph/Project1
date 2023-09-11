@@ -159,9 +159,6 @@ However, for countries with an average temperature of 10 or lower, there is a mo
 #### Map plot of Low-carbon electricity (% electricity)
 
 
-#### Map plot of Average Temp
-
-
 ####  Interpretation and Analysis 
 ```
 #The low carbon electricity percentage in the highest & lowest  temperature countries
