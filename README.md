@@ -152,6 +152,10 @@ However, for countries with an average temperature of 10 or lower, there is a mo
 
 ### Use of low-carbon electricity sources and average temperatures developed by Khadija
 
+#### Map plot of Average Temperature
+
+#### Map plot of Renewable energy share in the total final energy consumption (%)
+
 #### Map plot of Low-carbon electricity (% electricity)
 
 
