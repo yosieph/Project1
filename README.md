@@ -32,11 +32,11 @@ The primary objective of this data analysis is to investigate if there is a corr
 ###  - Collect data on emissions related to the use of energy ,  CO2 emissions .
 ###  - Collect the Longitude and latitude value of differents countries to make a good map
 
-## Datasets  used: 
+## Datasets used: 
 
--‘https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset,’
--‘https://www.kaggle.com/datasets/anshtanwar/global-data-on-sustainable-energy,’
--‘https://www.kaggle.com/datasets/balabaskar/historical-weather-data-of-all-country-capitals’
+‘https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset,’
+‘https://www.kaggle.com/datasets/anshtanwar/global-data-on-sustainable-energy,’
+‘https://www.kaggle.com/datasets/balabaskar/historical-weather-data-of-all-country-capitals’
 
 ## Data processing
 
