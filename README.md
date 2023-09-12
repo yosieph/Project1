@@ -33,9 +33,9 @@ The primary objective of this data analysis is to investigate if there is a corr
 
 ## Datasets used: 
 
-‘https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset,’
-‘https://www.kaggle.com/datasets/anshtanwar/global-data-on-sustainable-energy,’
-‘https://www.kaggle.com/datasets/balabaskar/historical-weather-data-of-all-country-capitals’
+https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset,
+https://www.kaggle.com/datasets/anshtanwar/global-data-on-sustainable-energy,
+https://www.kaggle.com/datasets/balabaskar/historical-weather-data-of-all-country-capitals
 
 ## Data processing
 
@@ -60,7 +60,7 @@ The columns in our dataset are:
 11. Longitude
 12. 2020 Population 
 ```
-## Data Visualizations:**
+## Data Visualizations:
 - A variety of visualizations, including scatter plots, box plots, linear regression and map plots, were used to explore different aspects of the data. These visualizations enhanced our understanding of the data and provided insights into distribution, correlation, and geographic patterns.
 
 
