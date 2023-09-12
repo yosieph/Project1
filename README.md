@@ -1,7 +1,6 @@
 # Project Topic  : Data Analysis on the Relationship Between Low-Carbon Electricity usage and Global Average Temperatures & CO2 emissions 
 # Team Members: Danik Lafrance, Khadija Fahr, Yosieph Fissuh
 
-
 # Why we choose this topic:
 
 The relationship between low-carbon electricity usage and global average temperatures is a critical subject in today's world.
@@ -159,6 +158,7 @@ However, for countries with an average temperature of 10 or lower, there is a mo
 #### Map plot of Low-carbon electricity (% electricity)
 
 ##### 1 Visualization
+-![image](output_data/Country-Energy.png)
 ```
 #Perform a code to visualize the scatter plot and linear regression about  relation between average temperature and  Renewable energy share in the total final energy consumption (%)
 
@@ -242,6 +242,7 @@ output_data/Scatter-Plot-with-linear-regression-for-highest-Temperature-Countrie
 output_data/Combined-Scatter-Plot-with-linear-regression-for-All-Countries.png
 
 ```
+-![image](https://github.com/yosieph/Project1/blob/main/output_data/Combined-Scatter-Plot-with-linear-regression-for-All-Countries.png)
 ##### Analysis
 ##### Linear Regression for All Countries: Slope (Coefficient) = -2.07 so this indicate that as the average temperature increases, the percentage of low-carbon electricity decreases
 
