@@ -61,10 +61,11 @@ The columns in our dataset are:
 12. 2020 Population 
 ```
 ## Data Visualizations:
+
 A variety of visualizations, including scatter plots, box plots, linear regression and map plots, were used to explore different aspects of the data. These visualizations enhanced our understanding of the data and provided insights into distribution, correlation, and geographic patterns.
 
 ========================================
-## Data Analysis (code developed ):
+## Data Analysis (code developed):
 
 #### dependencies and setup
 ```
