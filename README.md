@@ -159,8 +159,8 @@ However, for countries with an average temperature of 10 or lower, there is a mo
 #### Map plot of Low-carbon electricity (% electricity)
 
 ##### 1 Visualization
-img('output_data/Country Energy.png')
 
+-![image](output_data/Country Energy.png)
 ```
 #Perform a code to visualize the scatter plot and linear regression about  relation between average temperature and  Renewable energy share in the total final energy consumption (%)
 
