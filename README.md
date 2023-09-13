@@ -1,5 +1,10 @@
 # Project Topic  : Data Analysis on the Relationship Between Low-Carbon Electricity usage and Global Average Temperatures & CO2 emissions 
 
+###  code ipynb
+### https://github.com/yosieph/Project1/edit/main/project1.ipynb
+### Report project1
+### https://github.com/yosieph/Project1/edit/main/Data-Analysis-Report.pdf
+
 
 # Why we choose this topic:
 
