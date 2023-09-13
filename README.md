@@ -163,7 +163,8 @@ Ttest_indResult(statistic=-2.2483778025923717, pvalue=0.028435494666494792)
 Since the p-value is less than .05, we reject the null hypothesis of the t-test and conclude that there is sufficient evidence to say that temperatures might play an impact on energy consumption.
 
 # Khadija
-## What is the relation betweeen  the  low-carbon electricity % produce  and the Average of Temperature on the 10 hotest  and coldest countries 
+## Temperature and low-carbon electricity
+### What is the relation betweeen  the  low-carbon electricity % produce  and the Average of Temperature on the 10 hotest  and coldest countries 
 #### Map plot of Low-carbon electricity (% electricity)
 ```
 %%capture --no-display
@@ -242,6 +243,8 @@ Linear Regression for All Countries: Slope (Coefficient) = -2.0688
 #####   3-Linear Regression for All Countries: Slope (Coefficient) = -2.07 so this indicate that as the average temperature increases, the percentage of low-carbon electricity decreases
 
 ### After our first analysis about the relation between Temperature average and Low Carbon electricity % produce , to deepdive our analysis , we decide to see others Factor related to  Renewable energy share in the total final energy consumption (%)  and it impact on Temperature
+
+## What is the relation betweeen  the  Renewable energy consumption (%) and the Average of Temperature on the 10 hotest  and coldest countries 
 ```
 ##graph plot showing Renewable energy share in the total final energy consumption (%)  per country
 ```
