@@ -147,8 +147,6 @@ low_temps = main_data.loc[main_data['Average Temp'] <= 10]
 ##### Final Analysis: Based on the data provided, there is a weak correlation between energy consumption and temperature for all countries (outliers removed). The correlation is non-existant when all countries are included in the data. 
 However, for countries with an average temperature of 10 or lower, there is a moderate to strong correlation.
 
-
-
 ## Use of low-carbon electricity sources and average temperatures developed by Khadija
 
 #### Map plot of Average Temperature
@@ -295,9 +293,6 @@ Additionally, the higher usage of low-carbon electricity in colder, more develop
 
    
 ===========================================
-   
-
-
    
 
 
