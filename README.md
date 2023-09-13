@@ -94,8 +94,10 @@ main_data
 
 ```
 
-## Temperature & energy consumption developed by Danik
+# Danik
+## Temperature & energy consumption 
 ##### 1 Visualization
+
 ### graph plot showing energy consumption per country
 ![bar graph - renewable](https://github.com/yosieph/Project1/assets/100168693/e0e30478-260f-43e9-bd4d-d30f3d3f7351)
 ### scatter plot showing the correlation between temp and primary energy consumption
