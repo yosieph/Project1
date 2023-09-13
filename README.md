@@ -142,6 +142,8 @@ low_temps = main_data.loc[main_data['Average Temp'] <= 10]
 ##remove outliers and complete new linear regression plot
 
 ```
+<img width="960" alt="image" src="https://github.com/yosieph/Project1/assets/100168693/46b0c6e9-c025-4d54-9df3-f0f7772f4c79">
+
 ##### Analysis
 ##### The r-squared is: 0.40616752081275864 so There is a weak correlation between energy consumption and average temperature, after removing outliers.
 
