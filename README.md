@@ -28,7 +28,6 @@ The primary objective of this data analysis is to investigate if there is a corr
 
 # Data analysis process 
 
-
 ## Data Collection : 
 
 ###  - Collect data on low-carbon electricity percentage usage for each of the 101 countries. This data may include the percentage of electricity generated from low carbon  sources like wind, solar, hydro, and nuclear power.
@@ -74,20 +73,18 @@ A variety of visualizations, including scatter plots, box plots, linear regressi
 
 #### dependencies and setup
 ```
-
+#dependencies and setup
 import matplotlib.pyplot as plt
 import pandas as pd
 import scipy.stats as st
 import seaborn as sns
 import numpy as np
-from scipy.stats import linregress
-from pathlib import Path
 import hvplot.pandas
 
-# Turn off warning messages
-import warnings
-warnings.filterwarnings("ignore")
-
+from scipy.stats import ttest_ind
+from scipy.stats import linregress
+from scipy import stats
+from pathlib import Path
 ```
 ```
 #import files and read the data
@@ -98,16 +95,13 @@ main_data
 ```
 
 ### Temperature & energy consumption developed by Danik
-
-#### Map plot of Primary energy consumption per capita (kWh/person)
-
-
-
-####  Interpretation and Analysis 
 ##### 1 Visualization
-```
-#scatter plot showing the correlation between temp and primary energy consumption
-```
+### graph plot showing temp values per country
+![Country Temp](https://github.com/yosieph/Project1/assets/100168693/7de185ba-1b5f-4777-a468-504a06fe9777)
+### graph plot showing energy consumption per country
+![bar graph - renewable](https://github.com/yosieph/Project1/assets/100168693/e0e30478-260f-43e9-bd4d-d30f3d3f7351)
+### scatter plot showing the correlation between temp and primary energy consumption
+![Energy Consumption vs  Average Temperature (2019)](https://github.com/yosieph/Project1/assets/100168693/cad689fd-eb6f-411b-8c11-468c4e66f841)
 
 ##### Analysis
 ##### The r-squared is: 0.07426043111699936  so The is a no/very weak correlation between energy consumption and average temperature with entire data.
@@ -262,8 +256,12 @@ output_data/Scatter-Plot-with-linear-regression-for-Lowest-Temperature-Countries
 output_data/Scatter-Plot-with-linear-regression-for-highest-Temperature-Countries.png
 
 ```
+
+
 ##### Analysis
 ##### Linear Regression for Highest Temperature Countries: Slope (Coefficient) = 4.6044 so hotter countries in this group demonstrate a preference for low-carbon electricity sources.
+
+![Combined-Scatter-Plot-with-linear-regression-Renewable -for-All-Countries](https://github.com/yosieph/Project1/assets/100168693/dd699849-9f8b-44e6-92b6-ef94c7703fbb)
 
 ##### 6 Visualization
 ```
@@ -325,19 +323,15 @@ The countries that produce more renewable energy generate less CO2 .
 it's essential to remember that each country's energy mix and emissions profile are influenced by unique factors, including geography, natural resources, economic conditions, and government policies.
 
 
-
-
-
-
 # Summary:
 
 The final analysis about our primary objective :
 
-1 - Temperature & energy consumption
+## 1 - Temperature & energy consumption
 There is a strong correlation between Temperature and energy consumption in countries with an average temperature of 10 degrees or less. Overall, there is a weak correlation. 
-2 - Temperature &  the low-carbon electricity sources 
+## 2 - Temperature &  the low-carbon electricity sources 
 The Coldest countries tend to generate a greater proportion of low-carbon electricity compared to their warmer countries with some exceptions.
-3 - Co2 Emission & renewable energy produced
+## 3 - Co2 Emission & renewable energy produced
 The countries that produce more renewable energy generate less Co2 .
    
 ===========================================
