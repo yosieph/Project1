@@ -147,8 +147,6 @@ low_temps = main_data.loc[main_data['Average Temp'] <= 10]
 ##### Final Analysis: Based on the data provided, there is a weak correlation between energy consumption and temperature for all countries (outliers removed). The correlation is non-existant when all countries are included in the data. 
 However, for countries with an average temperature of 10 or lower, there is a moderate to strong correlation.
 
-
-
 ## Use of low-carbon electricity sources and average temperatures developed by Khadija
 
 #### Map plot of Average Temperature
@@ -280,34 +278,24 @@ Additionally, the higher usage of low-carbon electricity in colder, more develop
 
 
 
-# Summary 
- Data Analysis on "Low-Carbon Electricity uses percentage  and Global Average Temperatures & Co2 emission "**
+# Summary:
 
-1. **Impact of Temperature on Energy Consumption:**
-   -
+The final analysis about our primary objective :
 
-2. **Percentage of Low-Carbon Electricity uses & Temperature Average **
-   - The analysis revealed that a certain percentage of electricity uses    across the analyzed countries comes from low-carbon sources (renewable energy or nuclear power). This indicates a global effort to transition to cleaner energy sources.
-   - 
-
-
-3. **Relationship Between CO2 Emissions and sainstable  Electricity Usage:**
-
+1 - Temperature & energy consumption
+There is a strong correlation between Temperature and energy consumption in countries with an average temperature of 10 degrees or less. Overall, there is a weak correlation. 
+2 - Temperature &  the low-carbon electricity sources 
+The Coldest countries tend to generate a greater proportion of low-carbon electricity compared to their warmer countries with some exceptions.
+3 - Co2 Emission & renewable energy produced
+The countries that produce more renewable energy generate less Co2 .
    
 ===========================================
-   
-
-
-   
-
-
 
 #  Conclusion
 
 ### This data analysis sheds light on the complex interplay between temperature, energy consumption, low-carbon electricity usage and Co2 emission. 
 Understanding these dynamics is crucial for addressing climate change, optimizing energy resources, and making informed decisions regarding energy policy and sustainability initiatives.
 Further research and investigation into specific regions and policy interventions may be necessary to develop targeted strategies for reducing carbon emissions and promoting clean energy adoption.
-
 
 #  Recommendations
 
