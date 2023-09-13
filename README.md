@@ -1,5 +1,5 @@
 # Project Topic  : Data Analysis on the Relationship Between Low-Carbon Electricity usage and Global Average Temperatures & CO2 emissions 
-# Team Members: Danik Lafrance, Khadija Fahr, Yosieph Fissuh
+
 
 # Why we choose this topic:
 
@@ -291,12 +291,6 @@ The countries that produce more renewable energy generate less Co2 .
    
 ===========================================
 
-#  Conclusion
-
-### This data analysis sheds light on the complex interplay between temperature, energy consumption, low-carbon electricity usage and Co2 emission. 
-Understanding these dynamics is crucial for addressing climate change, optimizing energy resources, and making informed decisions regarding energy policy and sustainability initiatives.
-Further research and investigation into specific regions and policy interventions may be necessary to develop targeted strategies for reducing carbon emissions and promoting clean energy adoption.
-
 #  Recommendations
 
 Our recommendations or insights for future research in this area are:
@@ -304,3 +298,5 @@ Our recommendations or insights for future research in this area are:
 Exploration of Other Factors:
 Further analysis considered additional factors like population and economic indicators, energy consumption over the years, revealing potential relationships between these variables and energy consumption.
 Those relationships may offer insights into energy demand patterns and the adoption of low-carbon energy sources and gives more valuable information  for policymakers and energy planners as they prepare for future energy needs.
+
+# Team Members: Danik Lafrance, Khadija Fahr, Yosieph Fissuh
