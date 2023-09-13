@@ -115,7 +115,6 @@ low_temps = main_data.loc[main_data['Average Temp'] <= 10]
 ##### 2 Visualization
 ```
 #scatter plot showing the correlation between temp and primary energy consumption in high temp 
-
 ```
 ##### Analysis
 ##### The r-squared is: 0.0028583229372739416 so There is no correlation between energy consumption and countries with average temperatures 25 and higher
@@ -123,11 +122,9 @@ low_temps = main_data.loc[main_data['Average Temp'] <= 10]
 ##### 3 Visualization
 ```
 #scatter plot showing the correlation between temp and primary energy consumption in low temp 
-
 ```
 ##### Analysis
 ##### The r-squared is: 0.7053782565845196 so There is a moderate/strong correlation between energy consumption and countries with an average temperature of 10 or lower.
-
 ##### 4 Visualization
 ```
 #find outliers within the data
@@ -135,11 +132,9 @@ low_temps = main_data.loc[main_data['Average Temp'] <= 10]
 ```
 ##### Analysis
 ##### The lower quartile of temperatures is: 4599.5175500000005 The upper quartile of temperatures is: 38088.3975 The interquartile range of temperatures is: 33488.87995 The the median of temperatures is: 20460.55 Values below -45633.802375 could be outliers. Values above 88321.71742500001 could be outliers. ['Bahrain', 'Canada', 'Iceland', 'Kuwait', 'Norway', 'Qatar', 'Singapore', 'Trinidad and Tobago', 'United Arab Emirates'] could be outliers. 
-
 ##### 5 Visualization
 ```
 ##remove outliers and complete new linear regression plot
-
 ```
 <img width="960" alt="image" src="https://github.com/yosieph/Project1/assets/100168693/46b0c6e9-c025-4d54-9df3-f0f7772f4c79">
 
@@ -150,11 +145,8 @@ low_temps = main_data.loc[main_data['Average Temp'] <= 10]
 However, for countries with an average temperature of 10 or lower, there is a moderate to strong correlation.
 # Add TTest 
 Do higher and lower temperatures have an impact on energy consumption?
-
 Null Hypothesis: Average country temperatures above 25 degress celsius and below 10 degress celsius have no impact on energy consumption.
-
 Alternative Hypothesis: Average country temperatures above 25 degress celsius and below 10 degress celsius might play a factor in energy consumption.
-
 ```
 #ttest
 #define samples
@@ -248,8 +240,7 @@ Linear Regression for All Countries: Slope (Coefficient) = -2.0688
 #####  2-Linear Regression for Highest Temperature Countries: Slope (Coefficient) = 4.6044 so hotter countries in this group demonstrate a evolutif production of low-carbon electricity
 #####   3-Linear Regression for All Countries: Slope (Coefficient) = -2.07 so this indicate that as the average temperature increases, the percentage of low-carbon electricity decreases
 
-### After our first analysis about the relation between Temperature average and Low Carbon electricity % produce , we didnt have a relevant result that can help js to make some decision , so we decide to see others Factor related to Renewable energy and it impact on Temperature
-
+### After our first analysis about the relation between Temperature average and Low Carbon electricity % produce , to deepdive our analysis , we decide to see others Factor related to  Renewable energy share in the total final energy consumption (%)  and it impact on Temperature
 ```
 ##graph plot showing Renewable energy share in the total final energy consumption (%)  per country
 ```
@@ -307,23 +298,43 @@ the p-value (0.753) is much larger than 0.05 (a common significance level).so we
 
 
 
-### Use of low-carbon electricity sources and CO2 emissions developed by Yoseiph
+## Use of low-carbon electricity sources and CO2 emissions developed by Yoseiph
 
-#####
-
-
-
-##### 7 Visualization
+#####  Visualization
 ```
-# 
+# bar graph - co2 emissions
 ```
-<img width="960" alt="image" src="https://github.com/yosieph/Project1/assets/100168693/841eaec8-1a97-40e0-b754-8dc2df52196a">
-##### Analysis
-##### 
+![bar graph - co2 emissions](https://github.com/yosieph/Project1/assets/100168693/2ec91443-b8b9-46ca-9547-79f88bcaea5c)
 
-We have a correlation between low CO2 emissions and higher use of renewable energy, 
-The countries that produce more renewable energy generate less CO2 . 
-it's essential to remember that each country's energy mix and emissions profile are influenced by unique factors, including geography, natural resources, economic conditions, and government policies.
+#####  code
+```
+# List the main_data by co2 emission  in descending order to get the co2 emssion countries
+highest_Co2_Emission_countries = main_data.sort_values(by='co2 Emissions (metric tons per capita)', ascending=False).head(10)[['Country', 'co2 Emissions (metric tons per capita)', 'Renewable energy share in the total final energy consumption (%)']]
+print (highest_Co2_Emission_countries)
+
+```
+#### Analysis
+##### Analysis:The High co2 emission  country  are China ,United States , india , Japan and Germany ..ect. Industrial economy major factor in co2 emission and popilation alos one factor . 
+
+##### Lowest co2 emission countries per renewable energy consumption
+![bar graph - highest](https://github.com/yosieph/Project1/assets/100168693/8190252a-e773-466d-b52f-09947128011c)
+
+#### Analysis
+##### The resulting plot will show a bar chart with each country's name on the x-axis and the corresponding CO2 emissions per capita (expressed as "low-carbon electricity (% electricity)") on the y-axis. 
+##### Each bar will represent a country, and its height will indicate the value of CO2 emissions per capita. The blue color is used to distinguish the bars.
+##### This chart should help visualize and compare the low CO2 emission countries in terms of their CO2 emissions per capita,allowing for easy identification of which countries have lower emissions in relation to their electricity production.
+##### highest co2 emission Country per renewable energy consumption
+![bar graph - lowest](https://github.com/yosieph/Project1/assets/100168693/49e48c63-7da7-4458-a826-87ea51069c88)
+
+#### Analysis
+##### We have a correlation between low CO2 emissions and higher use of renewable energy, The countries that produce more renewable energy generate less CO2 .it's essential to remember that each country's energy mix and emissions profile are influenced by unique factors, including geography, natural resources, economic conditions, and government policies.If the average low-carbon electricity percentage is higher for countries with "Low CO2 Emissions," it would suggest that these countries tend to use more low-carbon electricity sources.
+
+#### list of high carbon 
+![piechart - highest](https://github.com/yosieph/Project1/assets/100168693/6c6d71b8-9bf3-4560-b12f-1936fe3b5672)
+#### CO2 Emissions for Lowest CO2 Countries
+![piechart - lowest](https://github.com/yosieph/Project1/assets/100168693/c1a7d226-43f7-4623-8ec3-4959ea987e6c)
+
+
 
 
 # Summary:
