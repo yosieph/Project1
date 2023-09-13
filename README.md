@@ -298,8 +298,8 @@ the p-value (0.753) is much larger than 0.05 (a common significance level).so we
 ##### Additionally, the higher usage of low-carbon electricity in colder, more developed countries highlights the potential correlation between economic development and the adoption of low carbon  energy sources.
 
 
-
-## Use of low-carbon electricity sources and CO2 emissions developed by Yoseiph
+# Yoseiph
+## Use of low-carbon electricity sources and CO2 emissions 
 
 #####  Visualization
 ```
