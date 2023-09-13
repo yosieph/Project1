@@ -13,13 +13,13 @@ The primary objective of this data analysis is to investigate if there is a corr
 
 #  Research Questions: 
 
-###  1 - Do higher and lower temperatures have an impact on energy consumption? Danik
+### there is any correlation between :
+###  1 -temperature and energy consumption
 
-###  2 - What is the percentage of low-carbon electricity used in the highest & lowest countries ? Khadija
+###  2 - temperature and low-carbon electricity      
        
-###  3- Do countries with high CO2 emissions use less low-carbon electricity? Yosieph
+###  3- Co2 emissions & renewable energy .
 
-###  4- Do countries with low CO2 emissions use more low-carbon electricity? 
 
 # Data analysis process 
 
@@ -95,6 +95,7 @@ main_data
 ### Temperature & energy consumption developed by Danik
 
 #### Map plot of Primary energy consumption per capita (kWh/person)
+
 
 
 ####  Interpretation and Analysis 
@@ -259,9 +260,7 @@ Additionally, the higher usage of low-carbon electricity in colder, more develop
 
 ### Use of low-carbon electricity sources and CO2 emissions developed by Yoseiph
 
-
-
-
+#####
 
 
 
@@ -269,9 +268,13 @@ Additionally, the higher usage of low-carbon electricity in colder, more develop
 ```
 # 
 ```
+<img width="960" alt="image" src="https://github.com/yosieph/Project1/assets/100168693/841eaec8-1a97-40e0-b754-8dc2df52196a">
 ##### Analysis
 ##### 
 
+We have a correlation between low CO2 emissions and higher use of renewable energy, 
+The countries that produce more renewable energy generate less CO2 . 
+it's essential to remember that each country's energy mix and emissions profile are influenced by unique factors, including geography, natural resources, economic conditions, and government policies.
 
 
 
