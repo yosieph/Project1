@@ -154,6 +154,32 @@ low_temps = main_data.loc[main_data['Average Temp'] <= 10]
 
 ##### Final Analysis: Based on the data provided, there is a weak correlation between energy consumption and temperature for all countries (outliers removed). The correlation is non-existant when all countries are included in the data. 
 However, for countries with an average temperature of 10 or lower, there is a moderate to strong correlation.
+# Add TTest 
+Do higher and lower temperatures have an impact on energy consumption?
+
+Null Hypothesis: Average country temperatures above 25 degress celsius and below 10 degress celsius have no impact on energy consumption.
+
+Alternative Hypothesis: Average country temperatures above 25 degress celsius and below 10 degress celsius might play a factor in energy consumption.
+
+```
+#ttest
+#define samples
+group1 = main_data.loc[main_data['Average Temp'] >= 25]
+group2 = main_data.loc[main_data['Average Temp'] <= 10]
+
+#perform independent two sample t-test
+ttest_ind(group1['Primary energy consumption per capita (kWh/person)'], group2['Primary energy consumption per capita (kWh/person)'])
+```
+### Result 
+```
+Ttest_indResult(statistic=-2.2483778025923717, pvalue=0.028435494666494792)
+```
+### Analysis 
+Since the p-value is less than .05, we reject the null hypothesis of the t-test and conclude that there is sufficient evidence to say that temperatures might play an impact on energy consumption.
+
+
+
+
 
 ## Use of low-carbon electricity sources and average temperatures developed by Khadija
 
@@ -225,8 +251,6 @@ If we have a global look at  the result we can definitely see that the lowest c
 #Scatter Plot for Lowest Temperature Countries
 # Perform Linear Regression for Lowest Temperature Countries
 output_data/Scatter-Plot-with-linear-regression-for-Lowest-Temperature-Countries.png
-
-
 ```
 ##### Analysis
 ##### Linear Regression for Lowest Temperature Countries: Slope (Coefficient) = -13.9328 so Colder countries tend to rely more heavily on low-carbon electricity sources
@@ -252,9 +276,26 @@ output_data/Combined-Scatter-Plot-with-linear-regression-for-All-Countries.png
 ##### Analysis
 ##### Linear Regression for All Countries: Slope (Coefficient) = -2.07 so this indicate that as the average temperature increases, the percentage of low-carbon electricity decreases
 
+# Add TTest 
+Develop a TTest to check our Hypotisis 
+Null Hypothesis : there is no difference between renewable energy used in the 10 Coldest countries and the 10 hotest country 
+Alternative Hypothesis : there is a significant difference between the two groups in term of consumption of renewable energies
 
+```
+#ttest code
+#define groupes
+Hotest_countries = main_data.loc[main_data['Average Temp'] >= 28.70]
+coldest_countries = main_data.loc[main_data['Average Temp'] <= 10]
 
-
+#perform independent two sample t-test
+ttest_ind(Hotest_countries['Renewable energy share in the total final energy consumption (%)'], coldest_countries['Renewable energy share in the total final energy consumption (%)'])
+```
+### Result 
+```
+Ttest_indResult(statistic=0.3185904666968613, pvalue=0.7533402039975953)
+```
+### Analysis 
+the p-value (0.753) is much larger than 0.05 (a common significance level).so we  do not have enough evidence to reject the null hypothesis. we conclude that there is no significant difference between the two groups.
 
 ### Final  Analysis
 
@@ -283,9 +324,7 @@ We have a correlation between low CO2 emissions and higher use of renewable ener
 The countries that produce more renewable energy generate less CO2 . 
 it's essential to remember that each country's energy mix and emissions profile are influenced by unique factors, including geography, natural resources, economic conditions, and government policies.
 
-### TTest 
 
-![TTest](https://github.com/yosieph/Project1/assets/100168693/8f0b3688-2562-4b49-a692-a0ff0f102160)
 
 
 
@@ -306,9 +345,7 @@ The countries that produce more renewable energy generate less Co2 .
 #  Recommendations
 
 Our recommendations or insights for future research in this area are:
-
 Exploration of Other Factors:
 Further analysis considered additional factors like population and economic indicators, energy consumption over the years, revealing potential relationships between these variables and energy consumption.
-Those relationships may offer insights into energy demand patterns and the adoption of low-carbon energy sources and gives more valuable information  for policymakers and energy planners as they prepare for future energy needs.
 
 # Team Members: Danik Lafrance, Khadija Fahr, Yosieph Fissuh
