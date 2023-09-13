@@ -174,7 +174,7 @@ map_plot_2 = main_data.hvplot.points("Longitude","Latitude", geo = True, tiles =
 # Display the map
 map_plot_2
 ```
-![image](https://github.com/yosieph/Project1/assets/100168693/f23fd380-43c2-4412-8ffe-3c5f0187ab79)
+![image](https://github.com/yosieph/Project1/main/)
 
 #### #graph plot showing Low-carbon electricity (% electricity) values per country
 ![country low-carb](https://github.com/yosieph/Project1/assets/100168693/f2b7a51b-83e7-4706-8c94-aafc54a5d7ad)
