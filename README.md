@@ -111,7 +111,6 @@ main_data
 high_temps = main_data.loc[main_data['Average Temp'] >= 25]
 low_temps = main_data.loc[main_data['Average Temp'] <= 10]
 ```
-
 ##### 2 Visualization
 ```
 #scatter plot showing the correlation between temp and primary energy consumption in high temp 
