@@ -94,7 +94,7 @@ main_data
 
 ```
 
-### Temperature & energy consumption developed by Danik
+## Temperature & energy consumption developed by Danik
 ##### 1 Visualization
 ### graph plot showing temp values per country
 ![Country Temp](https://github.com/yosieph/Project1/assets/100168693/7de185ba-1b5f-4777-a468-504a06fe9777)
@@ -171,108 +171,111 @@ Ttest_indResult(statistic=-2.2483778025923717, pvalue=0.028435494666494792)
 ### Analysis 
 Since the p-value is less than .05, we reject the null hypothesis of the t-test and conclude that there is sufficient evidence to say that temperatures might play an impact on energy consumption.
 
-
-
-
-
-## Use of low-carbon electricity sources and average temperatures developed by Khadija
-
-#### Map plot of Average Temperature
-
-#### Map plot of Renewable energy share in the total final energy consumption (%)
-
+# Khadija
+## What is the relation betweeen  the  low-carbon electricity % produce  and the Average of Temperature on the 10 hotest  and coldest countries 
 #### Map plot of Low-carbon electricity (% electricity)
-
-##### 1 Visualization
--![image](output_data/Country-Energy.png)
 ```
-#Perform a code to visualize the scatter plot and linear regression about  relation between average temperature and  Renewable energy share in the total final energy consumption (%)
+%%capture --no-display
 
-output_data/Scatter-Plot-with-linear-regression-for-Lowest-Temperature-Countries.png
-output_data/Scatter-Plot-with-linear-regression-for-highest-Temperature-Countries.png
-output_data/Combined-Scatter-Plot-with-linear-regression-for-All-Countries.png
-```
-##### Analysis
-##### we have a negative coefficient -9.25 so the coldest countries tend to rely more heavily on renewables energy pourcentage  or the highest countries with a strong correlation coefficient 15,58 tend to use more renewable energy source .the percentage of renewable energy used have a positif regression with the average temperature on global countries 
+# Configure the map plot
+map_plot_2 = main_data.hvplot.points("Longitude","Latitude", geo = True, tiles = "OSM", frame_width=800, frame_height=400, size="Low-carbon electricity (% electricity)", scale=2, color="Country")
 
+# Display the map
+map_plot_2
+```
+#### #graph plot showing Low-carbon electricity (% electricity) values per country
+![country low-carb](https://github.com/yosieph/Project1/assets/100168693/f2b7a51b-83e7-4706-8c94-aafc54a5d7ad)
+```
+# Find the country with the highest temperature
+country_with_highest_temp = main_data[main_data['Average Temp'] == main_data['Average Temp'].max()]
+# Get the low-carbon electricity percentage for the country with the highest temperature
+low_carbon_percentage_highest_temp = country_with_highest_temp['Low-carbon electricity (% electricity)'].values[0]
+# Find the country with the lowest temperature
+country_with_lowest_temp = main_data[main_data['Average Temp'] == main_data['Average Temp'].min()]
+# Get the low-carbon electricity percentage for the country with the lowest temperature
+low_carbon_percentage_lowest_temp = country_with_lowest_temp['Low-carbon electricity (% electricity)'].values[0]
+# Print the results
+print(f'The low carbon electricity percentage in the country with the highest temperature is {low_carbon_percentage_highest_temp:.2f}%')
+print(f'The low carbon electricity percentage in the country with the lowest temperature is {low_carbon_percentage_lowest_temp:.2f}%')
+```
+##### result 
+```
+The low carbon electricity percentage in the country with the highest temperature is 63.34%
+The low carbon electricity percentage in the country with the lowest temperature is 100.00%
+```
 
-####  Interpretation and Analysis 
-```
-#Perform code to show The low carbon electricity percentage in the highest & lowest  temperature countries
-```
-##### Result 
-```
-The low carbon electricity percentage in the country with the highest temperature (Sudan )is 63.34% 
-The low carbon electricity percentage in the country with the lowest temperature(Iceland) is 100.00% 
+## Create a box plot to compare low-carbon electricity percentage by temperature category we choos 25 as a temperature 
+![LC-Electricity(%) Temperature-BoxPlot](https://github.com/yosieph/Project1/assets/100168693/81758f08-875e-4d22-8dac-4ee7d38b2ccd)
 
+### we can now use more data to have a good understanding , we will choose the 10 hotest and coldest countries to do our analysis
+##### Develop a code to analyse the relation between average temperature and  Low-carbon electricity (% electricity) production
 ```
-##### 1 Visualization
-```
-# Create a scatter plot with a linear regression line
-output_data/LC-Electricity(%) VS Temperature-scaterPlot.png
-```
-##### Analysis
-##### The r-squared is negatif -2.0688 so there is a negative  correlation between LC-Electricity(%) and average temperature high and low .
-
-##### 2 Visualization
-```
-#Create a box plot to compare low-carbon electricity percentage by temperature category
-output_data/LC-Electricity(%)&Temperature-BoxPlot.png
-
-```
-##### Analysis
-##### 
-
-
-##### 3 Visualization
-```
-#The low carbon electricity percentage in the country with the 10 highest & 10 lowest  temperature countries 
-
-# Display the result main_dataFrame:country ,Average Temp ,Low-carbon electricity (% electricity)
-
+# Sort the main_data by 'Average Temp' in ascending order to get the lowest temperature countries
+lowest_temp_countries = main_data.sort_values(by='Average Temp', ascending=True).head(10)[['Country', 'Average Temp', 'Low-carbon electricity (% electricity)']]
+lowest_temp_countries.head(5)
+# Sort the main_data by 'Average Temp' in descending order to get the highest temperature countries
+highest_temp_countries = main_data.sort_values(by='Average Temp', ascending=False).head(10)[['Country', 'Average Temp', 'Low-carbon electricity (% electricity)']]
+highest_temp_countries.head(5)
+# Concatenate the two main_dataFrames to get the final result
+result_df = pd.concat([lowest_temp_countries, highest_temp_countries])
+# Reset the index of the resulting main_dataFrame
+result_df.reset_index(drop=True, inplace=True)
+# Display the result main_dataFrame
 result_df.head(20)
-
 ```
 ##### Analysis
-##### the coldest country are Iceland, canada,finland and others  are all Iceland, and the uses of Low carbon electricity pourcentage is very hight above belarus and estonia ,irland 
-The highest countries are Sudan ,Niger ,Djibouti and others dont have high carbon electricity pourcentage except Sudan with 63.3% and Cambodia with 53.37% and little be for Mali with 35.24% 
-If we have a global look at  the result we can definitely see that the lowest countries use more low carbon electricity than the highest countries except Sudan and Cambodia , so we can add more factors like a development , richness or others in our analysis to be more credible .
+##### the coldest country are Iceland, canada,finland and others make a very high percentage of Low carbon electricity above belarus and estonia ,irland The highest countries are Sudan ,Niger ,Djibouti and others dont produce high carbon electricity pourcentage except Sudan with 63.3% and Cambodia with 53.37% and little be for Mali with 35.24%
 
-
-##### 4 Visualization
+#### Create subplots for the visualizations
 ```
-# Create subplots with linear regression for the visualizations
-#Scatter Plot for Lowest Temperature Countries
-# Perform Linear Regression for Lowest Temperature Countries
-output_data/Scatter-Plot-with-linear-regression-for-Lowest-Temperature-Countries.png
+# Visualization 1: Scatter Plot for Lowest Temperature Countries with linear regression and calcul of r-squared
+# Visualization 2: Scatter Plot for Highest Temperature Countries with linear regression and calcul of r-squared
+# Visualization 3: Combined Scatter Plot for All Countries with linear regression and calcul of r-squared
 ```
+####  Result and Interpretation 
+```
+The r-squared for Coldest countries is: 0.354
+The r-squared for Highest countries is: 0.057
+The r-squared for all countries is: 0.244
+Linear Regression for Lowest Temperature Countries: Slope (Coefficient) = -13.9328
+Linear Regression for Highest Temperature Countries: Slope (Coefficient) = 4.6044
+Linear Regression for All Countries: Slope (Coefficient) = -2.0688
+```
+##### 1 Visualization
+![Combined-Scatter-Plot-with-linear-regression-for-All-Countries](https://github.com/yosieph/Project1/assets/100168693/008aa9bd-1c03-420a-8844-fd32623bfc2e)
 ##### Analysis
-##### Linear Regression for Lowest Temperature Countries: Slope (Coefficient) = -13.9328 so Colder countries tend to rely more heavily on low-carbon electricity sources
+##### 1-Linear Regression for Lowest Temperature Countries: Slope (Coefficient) = -13.9328 so Colder countries tend to rely more heavily on low-carbon electricity sources production but they have a higher percentage of lc production
+#####  2-Linear Regression for Highest Temperature Countries: Slope (Coefficient) = 4.6044 so hotter countries in this group demonstrate a evolutif production of low-carbon electricity
+#####   3-Linear Regression for All Countries: Slope (Coefficient) = -2.07 so this indicate that as the average temperature increases, the percentage of low-carbon electricity decreases
 
-##### 5 Visualization
-```
-# Scatter Plot for Highest Temperature Countries
-# Perform Linear Regression for Highest Temperature Countries
-output_data/Scatter-Plot-with-linear-regression-for-highest-Temperature-Countries.png
+### After our first analysis about the relation between Temperature average and Low Carbon electricity % produce , we didnt have a relevant result that can help js to make some decision , so we decide to see others Factor related to Renewable energy and it impact on Temperature
 
 ```
+##graph plot showing Renewable energy share in the total final energy consumption (%)  per country
+```
+##### Visualization
+![country renew](https://github.com/yosieph/Project1/assets/100168693/1ec16f49-45ee-4c7d-9128-19197782c8f8)
 
+#### Create subplots for the visualizations
+```
+# Visualization 1: Scatter Plot for renewable energy on  Lowest Temperature Countries with linear regression and calcul of r-squared
+# Visualization 2: Scatter Plot for renewable energy on  Highest Temperature Countries with linear regression and calcul of r-squared
+# Visualization 3: Combined Scatter Plot for renewable energy on  All Countries with linear regression and calcul of r-squared
+```
+####  Result and Interpretation 
+```
+The r-squared for Coldest countries is: 0.351
+The r-squared for Highest countries is: 0.355
+The r-squared for all countries is: 0.028
+Linear Regression for Lowest Temperature Countries: Slope (Coefficient) = -9.2526
+Linear Regression for Highest Temperature Countries: Slope (Coefficient) = 15.5854
+Linear Regression for All Countries: Slope (Coefficient) = 0.5805
+```
+##### 1 Visualization
+![Combined-Scatter-Plot-with-linear-regression-Renewable -for-All-Countries](https://github.com/yosieph/Project1/assets/100168693/e2209134-263a-4d15-a4d9-b2dbe70f0104)
 
 ##### Analysis
-##### Linear Regression for Highest Temperature Countries: Slope (Coefficient) = 4.6044 so hotter countries in this group demonstrate a preference for low-carbon electricity sources.
-
-![Combined-Scatter-Plot-with-linear-regression-Renewable -for-All-Countries](https://github.com/yosieph/Project1/assets/100168693/dd699849-9f8b-44e6-92b6-ef94c7703fbb)
-
-##### 6 Visualization
-```
-# Combined Scatter Plot for All Countries
-# Perform Linear Regression for All Countries
-output_data/Combined-Scatter-Plot-with-linear-regression-for-All-Countries.png
-
-```
--![image](https://github.com/yosieph/Project1/blob/main/output_data/Combined-Scatter-Plot-with-linear-regression-for-All-Countries.png)
-##### Analysis
-##### Linear Regression for All Countries: Slope (Coefficient) = -2.07 so this indicate that as the average temperature increases, the percentage of low-carbon electricity decreases
+##### Analysis : we have a negative coefficient -9.25 so the coldest countries tend to rely more heavily on renewables energy pourcentage  or the highest countries with a strong correlation coefficient 15,58 tend to use more renewable energy source .the percentage of renewable energy used have a positif regression with the average temperature on global countries
 
 # Add TTest 
 Develop a TTest to check our Hypotisis 
@@ -298,9 +301,9 @@ the p-value (0.753) is much larger than 0.05 (a common significance level).so we
 ### Final  Analysis
 
 ##### The analysis of our results for the top ten countries with the highest and the lowest average temperatures indicates that temperature may indeed play a significant role in influencing the choice of electricity sources in different countries. 
-The coldest countries, which are happen to be more developed, exhibit the highest usage of low-carbon electricity sources.
-Colder climates may drive the adoption of low-carbon electricity sources as a more efficient and sustainable option, while hotter regions may also be moving in the same direction. 
-Additionally, the higher usage of low-carbon electricity in colder, more developed countries highlights the potential correlation between economic development and the adoption of low carbon  energy sources.
+##### The coldest countries, which are happen to be more developed, exhibit the highest usage of low-carbon electricity sources.
+##### Colder climates may drive the adoption of low-carbon electricity sources as a more efficient and sustainable option, while hotter regions may also be moving in the same direction. 
+##### Additionally, the higher usage of low-carbon electricity in colder, more developed countries highlights the potential correlation between economic development and the adoption of low carbon  energy sources.
 
 
 
