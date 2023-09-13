@@ -96,8 +96,6 @@ main_data
 
 ## Temperature & energy consumption developed by Danik
 ##### 1 Visualization
-### graph plot showing temp values per country
-![Country Temp](https://github.com/yosieph/Project1/assets/100168693/7de185ba-1b5f-4777-a468-504a06fe9777)
 ### graph plot showing energy consumption per country
 ![bar graph - renewable](https://github.com/yosieph/Project1/assets/100168693/e0e30478-260f-43e9-bd4d-d30f3d3f7351)
 ### scatter plot showing the correlation between temp and primary energy consumption
@@ -174,7 +172,7 @@ map_plot_2 = main_data.hvplot.points("Longitude","Latitude", geo = True, tiles =
 # Display the map
 map_plot_2
 ```
-![image](https://github.com/yosieph/Project1/main/image.png)
+![image](https://github.com/yosieph/Project1/assets/100168693/ec26b932-32ab-45fb-976b-a29c7f0c7ce2)
 
 #### #graph plot showing Low-carbon electricity (% electricity) values per country
 ![country low-carb](https://github.com/yosieph/Project1/assets/100168693/f2b7a51b-83e7-4706-8c94-aafc54a5d7ad)
