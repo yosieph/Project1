@@ -363,4 +363,4 @@ Our recommendations or insights for future research in this area are:
 Exploration of Other Factors:
 Further analysis considered additional factors like population and economic indicators, energy consumption over the years, revealing potential relationships between these variables and energy consumption.
 
-# Team Members: Danik Lafrance, Khadija Fahr, Yosieph Fissuh
+## Team Members: Danik Lafrance, Khadija Fahr, Yosieph Fissuh
