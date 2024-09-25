@@ -1,4 +1,5 @@
 # Project Topic  : Data Analysis on the Relationship Between Low-Carbon Electricity usage and Global Average Temperatures & CO2 emissions 
+![image](https://github.com/user-attachments/assets/4c441733-1c61-4477-ab98-ae5d4a13eb99)
 
 
 ###  code ipynb
